@@ -9,24 +9,40 @@
 <body>
     <header>
         <img class="logoAlura" src="src/Top.png" alt="logoAlura">
-    </header>
-    <main>  
-        <div class="ladoEsquerdo">
-            <div class="input">
-                <input type="text" class="container__input">
-            </div>
+    </header> 
 
+    <main class="desafio">  
+
+        <section class="ladoEsquerdo">
+            <div class="input">
+                <input class="inputzinho" type="text" class="container__input">
+            </div>
             <div class="botoes">
                 <button onclick="criptografarMensagem()" class="botaoCriptografar">Criptografar</button>
+                <button onclick="decriptografarMensagem()" class="botaoDescriptografar">Descriptografar</button>
+            </div>
+        </section>
+
+
+
+
+        <section class="ladoDireito">
+            <div class="imagemDireita">
+                <img src="src/High quality products 1 1.png" id='imagem'alt="imagemNlocalizada">
+            </div>
+
+            <div class="retornoDireita">
+                <h1 class="mensagemNaoLocalizada">Mensagem Não localizada</h1>
+                <p class="digiteTexto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button onclick="copiarTexto()" class="botaoCopiarTexto">Copiar</button>
 
             </div>
-        </div>
-        <div class="ladoDireito">
-            <img src="src/High quality products 1 1.png" id='imagem'alt="imagemNlocalizada">
-            <h1 class="mensagemNloc"></h1>
-            <p class="DigiteTexto"></p>
-        </div>
+        </section>
+
+
     </main>
+
     <script src="codigo2.js" defer></script>
+
 </body>
 </html>
