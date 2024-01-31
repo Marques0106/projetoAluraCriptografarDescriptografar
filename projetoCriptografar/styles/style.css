@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    padding: 1% 1%;
+    background-color: white;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.listas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+
+}
+
+.navegacao{
+    color: var(--Dark-blue-dark-blue-300, #0A3871);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+body{
+    box-sizing: border-box;
+    background-color: #E9ECF8;
+}
+
+.desafio{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 8%;
+    gap: 80px;
+}
+
+
+.ladoDireito{
+    display: flex;
+    flex-direction: column;
+    gap: 123px;
+    width: 400px;
+    height: 944px; 
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); 
+    
+    
+}
+
+.retornoDireita{
+    margin: 10%;
+    display: flex;
+    width: 298px;
+    height: 29px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0; 
+}
+
+.mensagemNaoLocalizada{
+    color: var(--Gray-gray-500, #343A40);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */ 
+}
+.digiteTexto{
+    color: var(--Gray-gray-400, #495057);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */ 
+}
+#imagem{
+    width: 366px;
+    height: 304px;
+}
+
+.imagemDireita{
+    margin-top: 293px;
+}
+
+.botaoCopiarTexto{
+    display: flex;
+    width: 336px;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 8px; 
+    border-radius: 24px;
+    border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
+    
+}
+/* elemento que fica visivel somente após a criptografia*/
+
+/*.textoCriptografado{
+
+}*/
+
+
+
+
+
+.ladoEsquerdo{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 690px;
+}
+
+.inputzinho{
+    color: var(--Dark-blue-dark-blue-300, #0A3871);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 48px */ 
+    background-color: #E9ECF8;
+    border: none;
+    width: 700PX;
+}
+
+.botoes{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.botaoCriptografar{
+    background-color: #0A3871;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    border-radius: 24px; 
+
+    display: flex;
+    width: 328px;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0; 
+}
+
+.botaoDescriptografar{
+    color: var(--Dark-blue-dark-blue-300, #0A3871); 
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    border-radius: 24px; 
+    border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
+    background: var(--Light-gray, #D8DFE8);
+
+
+    display: flex;
+    width: 328px;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0; 
+}
+
+
+.rodape{
+    color: #0A3871;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
