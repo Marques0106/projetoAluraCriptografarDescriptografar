@@ -1,3 +1,12 @@
+
+:root{
+    --cor-primaria: #E9ECF8;
+    --cor-secundaria: #f8f9fa;
+    --cor-tercearia: #0A3871;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +14,7 @@
 header{
     display: flex;
     padding: 1% 1%;
-    background-color: white;
+    background-color: var(--cor-secundaria);
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -22,9 +31,9 @@ header{
 }
 
 .navegacao{
-    color: var(--Dark-blue-dark-blue-300, #0A3871);
+    color: var(--cor-tercearia);
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
@@ -34,11 +43,12 @@ header{
 
 body{
     box-sizing: border-box;
-    background-color: #E9ECF8;
+    background-color: var(--cor-primaria);
 }
 
 .desafio{
-    
+    width: 80%;
+    height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,21 +60,19 @@ body{
 .ladoDireito{
     display: flex;
     flex-direction: column;
-    gap: 123px;
+    gap: 15px;
     width: 400px;
     height: 944px; 
-    background-color: white;
+    background-color: var(--cor-secundaria);
     border-radius: 32px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); 
-    
-    
+    align-items: center;
 }
 
 .retornoDireita{
     margin: 10%;
     display: flex;
-    width: 298px;
-    height: 29px;
+    width: 98%;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -75,42 +83,44 @@ body{
     color: var(--Gray-gray-500, #343A40);
     text-align: center;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 28.8px */ 
 }
+
 .digiteTexto{
     color: var(--Gray-gray-400, #495057);
     text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */ 
 }
 #imagem{
-    width: 366px;
-    height: 304px;
+    width: 90%;
+    visibility: visible;
 }
 
 .imagemDireita{
-    margin-top: 293px;
+    margin-top: 70%;
 }
 
 .botaoCopiarTexto{
     display: flex;
-    width: 336px;
+    text-align: center;
+    width: 98%;
     padding: 24px;
     align-items: flex-start;
     gap: 8px; 
     border-radius: 24px;
-    border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
-    
+    border: 1px solid var(--cor-tercearia);
 }
 /* elemento que fica visivel somente após a criptografia*/
 
 /*.textoCriptografado{
+
 
 }*/
 
@@ -126,37 +136,37 @@ body{
 }
 
 .inputzinho{
-    color: var(--Dark-blue-dark-blue-300, #0A3871);
+    color: var(--cor-tercearia);
     font-family: Inter;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 48px */ 
-    background-color: #E9ECF8;
+    background-color: var(--cor-primaria);
     border: none;
-    width: 700PX;
+    width: 98%;
 }
 
 .botoes{
     display: flex;
-    align-items: flex-start;
     flex-direction: row;
-    gap: 24px;
+    justify-content: center;
+    gap: 3%;
+    width: 100%;
 }
 
 .botaoCriptografar{
-    background-color: #0A3871;
-    color: var(--White, #FFF);
+    background-color: var(--cor-tercearia);
+    color: var(--cor-secundaria);
     text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
     border-radius: 24px; 
-
     display: flex;
-    width: 328px;
+    width: 45%;
     padding: 24px;
     align-items: flex-start;
     gap: 8px;
@@ -164,20 +174,18 @@ body{
 }
 
 .botaoDescriptografar{
-    color: var(--Dark-blue-dark-blue-300, #0A3871); 
+    color: var(--cor-tercearia); 
     text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
     border-radius: 24px; 
-    border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
+    border: 1px solid var(--cor-tercearia);
     background: var(--Light-gray, #D8DFE8);
-
-
     display: flex;
-    width: 328px;
+    width: 45%;
     padding: 24px;
     align-items: flex-start;
     gap: 8px;
@@ -186,11 +194,129 @@ body{
 
 
 .rodape{
-    color: #0A3871;
-    background-color: white;
+    color: var(--cor-tercearia);
+    background-color:var(--cor-secundaria);
     padding: 15px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+/* tablet*/
+@media (max-width: 1100px) {
+    
+    .desafio{
+        width: 80%;
+        height: 15%;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .ladoDireito{
+        width: 98%;
+        height: 30%; 
+    }
+    #imagem{
+        visibility: hidden;
+        
+    }
+    .imagemDireita{
+        margin-top: 0%;
+        visibility: collapse;
+    }
+    .botaoCopiarTexto{
+        visibility: collapse;
+    }
+
+    .retornoDireita{
+        width: 99%;
+        gap: 16px;
+    }
+    
+    .mensagemNaoLocalizada{
+        font-size: 2.1rem;
+    }
+    .digiteTexto{
+        font-size: 2rem;
+    }
+    .botoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        gap:2px;
+    }
+    .botaoCriptografar{
+        width: 45%;
+        font-size: 2rem;
+    }
+    .botaoDescriptografar{
+        width: 45%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .inputzinho{
+        font-size: 2.5rem;
+    }
+    .ladoEsquerdo{
+        gap: 500px;
+    }
+}
+/* mobile*/
+@media (max-width: 930px) {
+    
+    .desafio{
+        width: 80%;
+        height: 15%;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .ladoDireito{
+        width: 90%;
+        height: 25%; 
+    }
+    #imagem{
+        visibility: hidden;
+        
+    }
+    .imagemDireita{
+        margin-top: 0%;
+        visibility: collapse;
+    }
+    .botaoCopiarTexto{
+        visibility: collapse;
+    }
+
+    .retornoDireita{
+        width: 99%;
+        gap: 16px;
+    }
+    
+    .mensagemNaoLocalizada{
+        font-size: 1.8rem;
+    }
+    .digiteTexto{
+        font-size: 1.5rem;
+    }
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        gap:20px;
+    }
+    .botaoCriptografar{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .botaoDescriptografar{
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .inputzinho{
+        font-size: 2.5rem;
+    }
+    .ladoEsquerdo{
+        gap: 450px;
+    }
 }

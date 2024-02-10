@@ -14,7 +14,7 @@ function criptografarMensagem(){
     .replace(/o/g, 'ober')
     .replace(/u/g, 'ufat');
     exibirTextoNaTela('p', textoCriptografado);
-    document.getElementById('imagem').removeAttribute('disabled');
+    document.getElementById('imagem').removeAttribute('visibility');
 }
 
 

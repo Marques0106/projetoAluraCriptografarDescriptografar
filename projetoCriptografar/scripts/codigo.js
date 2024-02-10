@@ -80,6 +80,7 @@ function criptografarMensagem () {
       mensagemCriptografada += arrayLetras[i];
     }
   }
+  
   exibirTextoNaTela('p', mensagemCriptografada)
 }
 
