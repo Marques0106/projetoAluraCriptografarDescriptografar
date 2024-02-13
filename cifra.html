@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img class="logoAlura" src="src/Top.png" alt="logoAlura">
+        <nav class="listas">
+            <a class="navegacao" href="index.html">Criptografia Padrão</a>
+            <a class="navegacao" href="cifra.html">Cifra de Cesar</a>
+            
+        </nav>
+    </header> 
+
+    <main class="desafio">  
+
+        <section class="ladoEsquerdo">
+            <div class="input">
+                <input class="inputzinho" type="text" class="container__input" placeholder="Digite seu texto">
+            </div>
+            <div class="botoes">
+                <button onclick="criptografarMensagem()" class="botaoCriptografar">Criptografar</button>
+                <button onclick="decriptografarMensagem()" class="botaoDescriptografar">Descriptografar</button>
+            </div>
+        </section>
+
+
+
+
+        <section class="ladoDireito">
+            <div class="imagemDireita">
+                <img src="src/High quality products 1 1.png" id='imagem'alt="imagemNlocalizada">
+            </div>
+
+            <div class="retornoDireita">
+                <h1 class="mensagemNaoLocalizada">Mensagem Não localizada</h1>
+                <p class="digiteTexto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button onclick="copiarTexto()" class="botaoCopiarTexto">Copiar</button>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por João Paulo</p>
+        <p role="alert">
+            ⚠️ Apenas mensagens sem acentos
+          </p>
+    </footer>
+    <script src="scripts/codigo.js" defer></script>
+</body>
+</html>
+
