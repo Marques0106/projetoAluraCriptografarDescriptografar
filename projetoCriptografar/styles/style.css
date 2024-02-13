@@ -1,0 +1,324 @@
+
+:root{
+    --cor-primaria: #E9ECF8;
+    --cor-secundaria: #f8f9fa;
+    --cor-tercearia: #0A3871;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    padding: 1% 1%;
+    background-color: var(--cor-secundaria);
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.listas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+
+}
+
+.navegacao{
+    color: var(--cor-tercearia);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+.desafio{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 8%;
+    gap: 80px;
+}
+
+.ladoEsquerdo{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 690px;
+}
+
+.inputzinho{
+    color: var(--cor-tercearia);
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 48px */ 
+    background-color: var(--cor-primaria);
+    border: none;
+    width: 98%;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+    width: 100%;
+}
+
+.botaoCriptografar{
+    background-color: var(--cor-tercearia);
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    border-radius: 24px; 
+    width: 45%;
+    padding: 24px;
+    gap: 8px;
+    flex-shrink: 0; 
+    cursor: pointer;
+}
+
+.botaoDescriptografar{
+    color: var(--cor-tercearia); 
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    border-radius: 24px; 
+    border: 1px solid var(--cor-tercearia);
+    background: var(--Light-gray, #D8DFE8);
+    width: 45%;
+    padding: 24px;
+    gap: 8px;
+    flex-shrink: 0; 
+    cursor: pointer;
+}
+
+
+.ladoDireito{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    height: 944px; 
+    background-color: var(--cor-secundaria);
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); 
+    align-items: center;
+}
+.imagemDireita{
+    margin-top: 50%;
+}
+
+#imagem{
+    width: 90%;
+    visibility: visible;
+}
+
+
+.retornoDireita{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensagemNaoLocalizada{
+    color: var(--Gray-gray-500, #343A40);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */ 
+}
+
+.digiteTexto{
+    color: var(--Gray-gray-400, #495057);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */ 
+}
+
+
+.botaoCopiarTexto{
+    cursor: pointer;
+    margin-top: 100%;
+    display: none;
+    text-align: center;
+    width: 98%;
+    padding: 24px;
+    gap: 8px; 
+    border-radius: 24px;
+    align-items: flex-end;
+    border: 1px solid var(--cor-tercearia);
+}
+/* elemento que fica visivel somente após a criptografia*/
+
+
+.rodape{
+    color: var(--cor-tercearia);
+    background-color:var(--cor-secundaria);
+    padding: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+/* tablet*/
+@media (max-width: 1100px) {
+    
+    .desafio{
+        width: 80%;
+        height: 15%;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .ladoDireito{
+        width: 98%;
+        height: 30%; 
+    }
+    #imagem{
+        visibility: hidden;
+        
+    }
+    .imagemDireita{
+        margin-top: 0%;
+        visibility: collapse;
+    }
+
+
+    .retornoDireita{
+        width: 99%;
+        gap: 16px;
+    }
+    
+    .mensagemNaoLocalizada{
+        font-size: 2.1rem;
+    }
+    .digiteTexto{
+        font-size: 2rem;
+    }
+    .botoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        gap:2px;
+    }
+    .botaoCopiarTexto{
+        margin-top: 0%;
+        font-size: 2rem;
+    }
+    .botaoCriptografar{
+        width: 45%;
+        font-size: 2rem;
+    }
+    .botaoDescriptografar{
+        width: 45%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .inputzinho{
+        font-size: 2.5rem;
+    }
+    .ladoEsquerdo{
+        gap: 500px;
+    }
+}
+/* mobile*/
+@media (max-width: 930px) {
+    
+    .desafio{
+        width: 80%;
+        height: 15%;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .ladoDireito{
+        width: 90%;
+        height: 25%; 
+    }
+    #imagem{
+        visibility: hidden;
+        
+    }
+    .imagemDireita{
+        margin-top: 0%;
+        visibility: collapse;
+    }
+    .botaoCopiarTexto{
+        margin-top: 0%;
+        font-size: 2rem;
+    }
+
+    .retornoDireita{
+        width: 99%;
+        gap: 16px;
+    }
+    
+    .mensagemNaoLocalizada{
+        font-size: 1.8rem;
+    }
+    .digiteTexto{
+        font-size: 1.5rem;
+    }
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        gap:20px;
+    }
+    .botaoCriptografar{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .botaoDescriptografar{
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .inputzinho{
+        font-size: 2.5rem;
+    }
+    .ladoEsquerdo{
+        gap: 450px;
+    }
+}
+
+.botaoCopiarTexto:hover{
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); 
+}
+.botaoCriptografar:hover{box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); }
+.botaoDescriptografar:hover{box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); }
+a:hover{box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); }
