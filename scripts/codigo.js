@@ -88,13 +88,14 @@ function criptografarMensagem () {
     let botaoCopiar = document.querySelector('.botaoCopiarTexto');
     let titulo = document.querySelector('.mensagemNaoLocalizada');
     let sessaoImagem = document.querySelector('.imagemDireita');
-    let texto = document.querySelector('.digiteTexto')
-      
+    let texto = document.querySelector('.digiteTexto');
+    let retorno = document.querySelector('.retornoDireita');
     botaoCopiar.style.display = 'block';
     titulo.style.display= "none";
     sessaoImagem.style.display = "none";
     texto.style.fontSize = "2rem";
-    exibirTextoNaTela('p', mensagemCriptografada)
+    retorno.style.justifyContent = 'space-between';
+    exibirTextoNaTela('p', mensagemCriptografada);
   }
 }
 

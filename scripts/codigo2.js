@@ -24,11 +24,12 @@ function criptografarMensagem(){
         let titulo = document.querySelector('.mensagemNaoLocalizada');
         let sessaoImagem = document.querySelector('.imagemDireita');
         let texto = document.querySelector('.digiteTexto')
-        
+        let retorno = document.querySelector('.retornoDireita')
         botaoCopiar.style.display = 'block';
         titulo.style.display= "none";
         sessaoImagem.style.display = "none";
         texto.style.fontSize = "2rem";
+        retorno.style.justifyContent = 'space-between'
     exibirTextoNaTela('p', textoCriptografado);
     }
 }

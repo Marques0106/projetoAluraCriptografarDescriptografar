@@ -25,7 +25,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 80px;
+    gap: 20%;
     align-items: center;
 
 }
@@ -53,7 +53,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1% 8%;
-    gap: 80px;
+    gap: 20%;
 }
 
 .ladoEsquerdo{
@@ -73,7 +73,7 @@ body{
     background-color: var(--cor-primaria);
     border: none;
     width: 98%;
-    padding: 15px;
+    padding: 1%;
 }
 
 .botoes{
@@ -148,6 +148,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    word-wrap: break-word;
 }
 
 .mensagemNaoLocalizada{
@@ -156,24 +157,23 @@ body{
     font-family: Inter;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 28.8px */ 
+
 }
 
 .digiteTexto{
+    width: 80%;
+    margin: 10%;
     color: var(--Gray-gray-400, #495057);
     text-align: center;
     font-family: Inter;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */ 
+    height: auto;
 }
 
 
 .botaoCopiarTexto{
     cursor: pointer;
-    margin-top: 100%;
     display: none;
     text-align: center;
     width: 98%;
@@ -217,14 +217,13 @@ body{
         visibility: collapse;
     }
 
-
     .retornoDireita{
         width: 99%;
-        gap: 16px;
+        gap: 10px;
     }
     
     .mensagemNaoLocalizada{
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
     .digiteTexto{
         font-size: 2rem;
@@ -256,7 +255,7 @@ body{
     .ladoEsquerdo{
         width: 90%;
         height: 25%; 
-        gap: 500px;
+        gap: 450px;
     }
 }
 /* mobile*/
@@ -266,7 +265,7 @@ body{
         width: 80%;
         height: 15%;
         flex-direction: column;
-        gap: 35px;
+        gap: px;
     }
     .ladoDireito{
         width: 90%;
@@ -282,7 +281,7 @@ body{
     }
     .botaoCopiarTexto{
         margin-top: 0%;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .retornoDireita{
@@ -305,11 +304,11 @@ body{
     }
     .botaoCriptografar{
         width: 100%;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .botaoDescriptografar{
         width: 100%;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
     .inputzinho{
@@ -319,7 +318,7 @@ body{
     .ladoEsquerdo{
         width: 90%;
         height: 25%; 
-        gap: 450px;
+        gap: 300px;
     }
 }
 
